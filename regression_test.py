@@ -7,7 +7,7 @@ covariates = data.data
 y = data.target
 model = lr.LinReg()
 model.fit(X = covariates, y = y)
-prediction = model.pred(X = covariates).mean()
+prediction = model.pred(X = covariates).mean()#train_test_splitしてないのでoverfitする
 print(prediction)
 
 
